@@ -7,8 +7,16 @@
 
 ## Running `pash`
 
+Running without installation directly from the github:
+
+```
+npx github:podgorniy/paradigm-shift PROMPT_FILE
+```
+
+Running after installation:
+
 `pash prompt_file_path` where `prompt_file_path` is a path to a prompt file. Prompt file may contain text, markdown, markdown with metadata block. `pash` produces extensive logs, requiring user interaction on every step of its run.
 
 ## Pash prompt file
 
-First prompt in the assistant conversation resides in a file. Optionally there is also a markdown metadata which contains info from previous prompt files runs: assistant id, thread id, run id, etc. These values are updates on each tool run multiple times the tool goes through various steps (thread creation, sending files into the thread, etc).
+Main prompt for the assistant resides in the input file provided into the `pash` tool call. Optionally file may contain markdown metadata with data from previous prompt files runs: assistant id, thread id, run id, etc. This data is updated on each tool run multiple times. And this data is used by the tool. For example you may choose to reuse `threadId` from previous runs as you're iterating on your prompt. This will save you API costs. In order not to reuse assistant/thread just remove corresponding lines from the prompt file.
