@@ -1,0 +1,14 @@
+{
+  "name": "paradigm-shift",
+  "version": "0.1.0",
+  "description": "Run LLM prompts from files against files to change files",
+  "bin": {
+    "pash": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/podgorniy/paradigm-shift.git"
+  },
+  "author": "",
+  "license": "Freeware"
+}
