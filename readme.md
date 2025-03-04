@@ -10,7 +10,7 @@
 Running without installation directly from the github:
 
 ```
-npx github:podgorniy/pash PROMPT_FILE
+npx github:podgorniy/pash
 ```
 
 Running after installation:
